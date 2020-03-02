@@ -1,0 +1,19 @@
+.BreadCrumb {
+  border-top: 1px solid $border_light_gray10;
+  padding: 18px 24px;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $text_gray;
+    }
+  }
+
+  li + li {
+    &:before {
+      content: " / ";
+      color: $text_gray;
+    }
+  }
+}

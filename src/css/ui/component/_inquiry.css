@@ -1,0 +1,38 @@
+.Inquiry {
+  padding: 80px 10px 100px;
+  text-align: center;
+
+  .title {
+    @mixin font-size 33;
+    line-height: 58px;
+    margin-bottom: 70px;
+  }
+
+  .text {
+    @mixin font-size 28;
+    line-height: 49px;
+    margin-bottom: 70px;
+  }
+
+  a {
+    @mixin button-rounded;
+    @mixin font-size 25;
+    background-color: $orange;
+    color: white;
+    width: 590px;
+    height: 86px;
+    line-height: 86px;
+    border-radius: 86px;
+    margin: 0 auto;
+
+    @mixin notPC {
+      max-width: 590px;
+      width: auto;
+    }
+  }
+
+  .icon-arrow:before {
+    @mixin font-size 12;
+  }
+
+}

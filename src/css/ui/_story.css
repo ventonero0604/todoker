@@ -1,0 +1,287 @@
+.Story {
+  color: $text_dark_gray;
+
+  &__main {
+    width: 100%;
+    height: 660px;
+    display: flex;
+
+    @mixin notPC {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .image {
+      width: 50%;
+      background-image: url("../../asset/image/stories/story_img.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @mixin notPC {
+        height: 380px;
+        width: 100%;
+      }
+    }
+    .textWrapper {
+      width: 50%;
+      background-color: $bg_light_gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+      box-sizing: border-box;
+
+      @mixin notPC {
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+      }
+    }
+    .number {
+      color: $orange;
+      @mixin font-size 24;
+      margin-bottom: 70px;
+
+      @mixin notPC {
+        margin-bottom: 20px;
+      }
+    }
+    .title {
+      @mixin font-size 44;
+      margin-bottom: 70px;
+
+      @mixin notPC {
+        margin-bottom: 20px;
+      }
+    }
+    .text {
+      @mixin font-size 30;
+    }
+  }
+
+  &__info {
+    padding: 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @mixin notPC {
+      flex-direction: column;
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+    .text {
+      @mixin font-size 30;
+      line-height: 49px;
+      border-left: 1px solid $text_dark_gray;
+      margin-left: 40px;
+      padding-left: 40px;
+
+      @mixin notPC {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+      @mixin Smp {
+        @mixin font-size 26;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  &__line {
+    height: 20px;
+    background: repeating-linear-gradient(
+      -45deg,     /* 角度の指定 */
+      #fff,      /* 色A ... 開始 */
+      #fff 4px,  /* 色A ... 終了 */
+      $orange 4px,      /* 色B ... 開始 */
+      $orange 6px   /* 色B ... 終了 */
+    );
+  }
+
+  &__leadText {
+    padding: 80px 50px;
+    @mixin font-size 20;
+    line-height: 35px;
+
+    @mixin Smp {
+      padding: 30px 20px;
+    }
+  }
+
+  &__items {
+    margin-bottom: 80px;
+  }
+
+  &__itemWrapper {
+    padding: 80px 0;
+
+    &:nth-child(2n+1) {
+      background-color: $bg_light_gray;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @mixin notPC {
+      padding: 0 40px;
+    }
+    @mixin Smp {
+      padding: 0 10px;
+    }
+
+    .title {
+      @mixin font-size 39;
+      margin-bottom: 70px;
+    }
+    .lead_l {
+      @mixin font-size 30;
+      line-height: 56px;
+      margin-bottom: 70px;
+      text-align: center;
+
+      @mixin notPC {
+        line-height: 1.7;
+      }
+    }
+    .lead_s {
+      @mixin font-size 25;
+      line-height: 56px;
+      margin-bottom: 30px;
+
+      @mixin notPC {
+        text-align: center;
+        line-height: 1.6;
+      }
+    }
+
+    img {
+      margin-bottom: 70px;
+      max-width: 100%;
+      height: auto;
+
+      @mixin notPC {
+        margin-bottom: 50px;
+      }
+    }
+    .text {
+      line-height: 36px;
+      max-width: 1024px;
+    }
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+
+    @mixin notPC {
+      padding: 0 20px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .is-smp {
+      display: none;
+    }
+
+    @mixin Smp {
+      .is-smp {
+        display: block;
+      }
+      .is-pc {
+        display: none;
+      }
+
+    }
+  }
+
+  &__inquiry {
+    margin-bottom: 80px;
+
+    a {
+      @mixin button-rounded;
+      @mixin font-size 25;
+      background-color: $orange;
+      color: white;
+      width: 590px;
+      height: 86px;
+      line-height: 86px;
+      border-radius: 86px;
+      margin: 0 auto;
+
+      @mixin Smp {
+        max-width: 300px;
+      }
+    }
+
+    .icon-arrow:before {
+      @mixin font-size 12;
+    }
+  }
+
+  &__listWrapper {
+    padding-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  &__listTitle {
+    margin: 0 auto 80px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: -14px;
+  }
+
+  &__listItem {
+    width: 332px;
+    margin-right: 14px;
+
+    img {
+      max-width: 100%;
+    }
+    .title {
+      @mixin font-size 24;
+      line-height: 38px;
+      padding: 30px 32px;
+      color: $text_dark_gray;
+    }
+  }
+
+  &__toStories {
+    margin-bottom: 80px;
+
+    a {
+      @mixin button-square;
+      @mixin font-size 25;
+      width: 480px;
+      height: 60px;
+      margin: 0 auto;
+
+      @mixin Smp {
+        max-width: 300px;
+      }
+    }
+
+    .icon-arrow:before {
+      @mixin font-size 12;
+    }
+  }
+}

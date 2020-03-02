@@ -1,0 +1,138 @@
+.Footer {
+  background-color: #fafafa;
+  padding-top: 78px;
+
+  &__logo {
+    display: block;
+
+    @mixin PC {
+      margin-right: 82px;
+    }
+    @mixin notPC {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+
+    @mixin notPC {
+      flex-direction: column;
+      align-items: center;
+    }
+    @mixin Smp {
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+
+  &__menuList {
+    display: flex;
+
+    @mixin Smp {
+      flex-wrap: wrap;
+
+      dl {
+        flex: 1;
+      }
+      dl:first-child {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+      }
+    }
+
+    dl {
+      width: 180px;
+
+      @mixin Smp {
+        width: auto;
+      }
+    }
+
+    dl + dl {
+      margin-left: 26px;
+
+      @mixin Smp {
+        margin-left: 0;
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+
+    }
+
+    dt {
+      @mixin font-size 14;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,.4);
+
+      &::before {
+        content: "◼︎";
+      }
+    }
+
+    dd {
+      line-height: 2.2;
+
+      a {
+        color: black;
+      }
+    }
+  }
+
+  &__menu {
+    @mixin Smp {
+      display: flex;
+      flex-wrap: wrap;
+
+      dt {
+        flex-basis: 100%;
+      }
+
+      dd {
+        flex-basis: 50%;
+        display: flex;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &__productLogo {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__dlButton {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__snsWrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+
+    .Icon + .Icon {
+      margin-left: 16px;
+    }
+  }
+
+  &__copyright {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    small {
+      @mixin font-size 12;
+      color: white;
+    }
+  }
+
+}

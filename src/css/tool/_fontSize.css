@@ -1,0 +1,12 @@
+/**
+ * @mixin fontSize
+ * @param $values
+ */
+
+:root {
+  --base-font-size: 16;
+}
+
+@define-mixin font-size $fontSize {
+  font-size: calc(($fontSize / var(--base-font-size))*100)%;
+}

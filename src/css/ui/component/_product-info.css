@@ -1,0 +1,180 @@
+.ProductInfo {
+  padding: 80px 0;
+  background-color: $bg_light_gray;
+
+  &__bg {
+    width: 100%;
+    background-image: url("../../asset/image/product_info/bg_cube_white.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    @mixin Tab {
+      max-width: 810px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 80px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+
+    @mixin Smp {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    border: 1px solid $border_light_gray20;
+    background-color: $bg_light_gray;
+    padding-bottom: 50px;
+    width: 629px;
+
+    @mixin Tab {
+      width: 505px;
+    }
+    @mixin Smp {
+      width: 300px;
+    }
+
+    &--office {
+      margin-right: 24px;
+
+      @mixin Smp {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+
+    .image {
+      span {
+        display: block;
+        padding-top: calc(340 / 629 * 100%);
+        background-image: url(../../asset/image/product_img1.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--personal .image span {
+        background-image: url(../../asset/image/product_img2.png);
+    }
+
+    .logoWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+
+      @mixin Tab {
+        height: 80px;
+      }
+
+      .title {
+        margin-top: 10px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+      }
+      .logo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 183px;
+        height: 63px;
+      }
+
+      &--office {
+        .title {
+          background-image: url(../../asset/image/top/title_for_office.png);
+          background-size: cover;
+          width: 210px;
+          height: 40px;
+
+          @mixin notPC {
+            width: 136px;
+            height: 26px;
+          }
+        }
+        .logo {
+          background-image: url(../../asset/image/logo_office.png);
+
+          @mixin notPC {
+            width: 125px;
+            height: 42px;
+          }
+        }
+      }
+
+      &--personal {
+        .title {
+          background-image: url(../../asset/image/top/title_for_personal.png);
+          background-size: cover;
+          width: 232px;
+          height: 36px;
+
+          @mixin notPC {
+            width: 149px;
+            height: 23px;
+          }
+        }
+        .logo {
+          background-image: url(../../asset/image/logo_personal.png);
+
+          @mixin notPC {
+            width: 125px;
+            height: 42px;
+          }
+        }
+      }
+    }
+    .line {
+      height: 13px;
+      margin-bottom: 40px;
+    }
+    .titleText {
+      margin-bottom: 30px;
+      @mixin font-size 26;
+      text-align: center;
+    }
+    .text {
+      color: $text_gray;
+      text-align: center;
+      line-height: 26px;
+
+      @mixin notPC {
+        padding: 0 10px;
+      }
+    }
+  
+    &--office {
+      .line {
+      background: repeating-linear-gradient(
+        -45deg,     /* 角度の指定 */
+        #fff,      /* 色A ... 開始 */
+        #fff 4px,  /* 色A ... 終了 */
+        $green 4px,      /* 色B ... 開始 */
+        $green 6px   /* 色B ... 終了 */
+      );
+      }
+    }
+
+    &--personal {
+      .line {
+        background: repeating-linear-gradient(
+          -45deg,#fff,#fff 4px,$light_green 4px,$light_green 6px
+        );
+      }
+    }
+  }
+}

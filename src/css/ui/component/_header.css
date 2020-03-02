@@ -1,0 +1,90 @@
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0 5px 3px rgba(0,0,0,0.05);
+  z-index: 10;
+
+  &__logoWrapper {
+    position: relative;
+    flex: 1;
+    margin-left: 46px;
+
+    @mixin Smp {
+      margin-left: 20px;
+    }
+  }
+
+  &__logo {
+    background-image: url("../image/logo.png");
+    background-position: 0 0;
+    background-size: 147px 38px;
+    width: 147px;
+    height: 38px;
+  }
+
+  &__logoText {
+    background-image: url("../image/logo_text.png");
+    background-position: 0 0;
+    background-size: 210px 13px;
+    width: 210px;
+    height: 13px; 
+    position: absolute;
+    top: 12px;
+    left: 169px;
+
+    @mixin Smp {
+      display: none;
+    }
+  }
+
+  &__menuWrapper {
+
+    @mixin PC {
+      margin-right: 46px;
+    }
+
+    .Icon--menu {
+      position: absolute;
+      right: 28px;
+      top: 50%;
+      margin-top: -14px;
+      display: none;
+
+      @mixin notPC {
+        display: block;
+      }
+    }
+  }
+  
+  &__menu {
+    li {
+      float: left;
+      font-size: 14px;
+      margin-left: 26px;
+
+      a {
+        color: black;
+      }
+
+      i {
+        display: inline-block;
+        margin-left: 6px;
+        margin-bottom: 2px;
+      }
+
+      ul {
+        display: none;
+
+        li {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @mixin notPC {
+      display: none;
+    }
+  }
+}
