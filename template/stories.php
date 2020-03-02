@@ -28,7 +28,7 @@
             <div class="textContainer">
               <p class="title"><span class="Icon Icon--story"></span>総務部・メール室</p>
               <p class="text">メールの仕分けが大変で、どれくらい荷物が来ているのかわからない。総務の残業時間は減らないけど、業務は増えているの？減っているの？あなたのオフィス業務を見える化して効率化を目指しませんか？</p>
-              <a href="#" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
+              <a href="./story.php" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
             <div class="textContainer">
               <p class="title"><span class="Icon Icon--story"></span>総務部・メール室</p>
               <p class="text">メールの仕分けが大変で、どれくらい荷物が来ているのかわからない。総務の残業時間は減らないけど、業務は増えているの？減っているの？あなたのオフィス業務を見える化して効率化を目指しませんか？</p>
-              <a href="#" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
+              <a href="./story.php" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="textContainer">
               <p class="title"><span class="Icon Icon--story"></span>総務部・メール室</p>
               <p class="text">メールの仕分けが大変で、どれくらい荷物が来ているのかわからない。総務の残業時間は減らないけど、業務は増えているの？減っているの？あなたのオフィス業務を見える化して効率化を目指しませんか？</p>
-              <a href="#" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
+              <a href="./story.php" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="textContainer">
               <p class="title"><span class="Icon Icon--story"></span>総務部・メール室</p>
               <p class="text">メールの仕分けが大変で、どれくらい荷物が来ているのかわからない。総務の残業時間は減らないけど、業務は増えているの？減っているの？あなたのオフィス業務を見える化して効率化を目指しませんか？</p>
-              <a href="#" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
+              <a href="./story.php" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <div class="textContainer">
               <p class="title"><span class="Icon Icon--story"></span>総務部・メール室</p>
               <p class="text">メールの仕分けが大変で、どれくらい荷物が来ているのかわからない。総務の残業時間は減らないけど、業務は増えているの？減っているの？あなたのオフィス業務を見える化して効率化を目指しませんか？</p>
-              <a href="#" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
+              <a href="./story.php" class="textlink">ストーリーを確認<i class="icon-arrow"></i></a>
             </div>
           </div>
         </div>
