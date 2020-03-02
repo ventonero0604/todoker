@@ -101,7 +101,7 @@
           <p class="title">配達物管理システム</p>
           <p class="text">オフィス郵便物の受け渡しをもっと便利に！<br/>郵便物の受け渡しを見える化・効率化します。</p>
         </div>
-        <a href="#" class="button">サービス詳細<i class="icon-arrow"></i></a>
+        <a href="./product_office.php" class="button">サービス詳細<i class="icon-arrow"></i></a>
         <a href="#" class="Icon Icon--buttonIos">App Storeからダウンロード</a>
       </div>
     </div>
@@ -119,7 +119,7 @@
             <p class="title">荷物受け渡しアプリ</p>
             <p class="text">私が受け取るモノはどこに？<br />個人間でのモノを受け渡しをもっと便利にします。</p>
           </div>
-          <a href="#" class="button">サービス詳細<i class="icon-arrow"></i></a>
+          <a href="./product_personal.php" class="button">サービス詳細<i class="icon-arrow"></i></a>
           <a href="#" class="Icon Icon--buttonIos">App Storeからダウンロード</a>
         </div>
       </div>
