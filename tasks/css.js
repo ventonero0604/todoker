@@ -68,6 +68,7 @@ gulp.task('css:build', ['stylelint'], () => {
     each,
     cssmixins,
     cssnested,
+    vars,
     cssnext({
       browsers:supportBrowser,
       features:{
