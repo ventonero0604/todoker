@@ -63,6 +63,8 @@
   </div>
 </section><!--/.Content-->
 
+<?php include ('component/contact_form.html'); ?>
+
 <ul class="BreadCrumb">
   <li><a href="/">HOME</a></li>
   <li><a href="#">ページ名</a></li>

@@ -1,0 +1,37 @@
+.ContactForm {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.mw_wp_form {
+  border: solid 4px #dcdcdc;
+	padding: 20px 20px 0;
+	margin-top: 60px;
+
+	@mixin Smp {
+		border: none;
+	}
+	
+	.script {
+		padding: 30px 40px;
+		width: 600px;
+		
+		@mixin Smp {
+			padding: 20px 10px;
+			width: 300px;
+		}
+	}
+}
+
+.online-manual-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+	padding-bottom: 30px;
+	@mixin font-size 42;
+	border-bottom: 2px solid $orange;
+}
+
+.hbspt-form + .hbspt-form {
+	display: none;
+}

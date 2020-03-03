@@ -217,27 +217,12 @@
     </div>
   </div><!--/.Top_mission-->
 
-  <!-- <div class="Top__formWrapper">
-    <div class="Top__form">
-      <form>
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email"/>
-        <label for="name1">性</label>
-        <input type="text" name="name1" id="name1">
-        <label for="name2">名</label>
-        <input type="text" name="name1" id="name2">
-        <label for="company">会社名</label>
-        <input type="text" name="company" id="company">
-        <label for="content">お問い合わせ内容</label>
-        <textarea name="content"></textarea>
-      </form>
-    </div>
-  </div> -->
+<?php include ('component/contact_form.html'); ?>
+
 </section><!--/.Content-->
 
 <?php include ('component/footer.html'); ?>
 
 </div><!--/.Wrapper-->
 
-</body>
 </html>

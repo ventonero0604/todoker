@@ -533,6 +533,43 @@ i {
 .Inquiry .icon-arrow:before {
     font-size: 75%;
 }
+.ContactForm {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 60px;
+}
+.mw_wp_form {
+    border: solid 4px #dcdcdc;
+    padding: 20px 20px 0;
+    margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+    .mw_wp_form {
+        border: none;
+    }
+}
+.mw_wp_form .script {
+    padding: 30px 40px;
+    width: 600px;
+}
+@media screen and (max-width: 767px) {
+    .mw_wp_form .script {
+        padding: 20px 10px;
+        width: 300px;
+    }
+}
+.online-manual-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    font-size: 262.5%;
+    border-bottom: 2px solid #f3a127;
+}
+.hbspt-form + .hbspt-form {
+    display: none;
+}
 .Footer {
     background-color: #fafafa;
     padding-top: 78px;
@@ -1719,7 +1756,7 @@ i {
     }
 }
 .Company__wrapper--access {
-    padding: 80px 0;
+    padding-bottom: 60px;
 }
 @media screen and (max-width: 767px) {
     .Company__wrapper--access p {
