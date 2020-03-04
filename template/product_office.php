@@ -3,6 +3,7 @@
 <head>
 <?php include ('component/meta.html'); ?>
 <link rel="stylesheet" href="../src/dist/css/style.css" type="text/css" media="all">
+<script src="../src/dist/js/app.js"></script>
 </head>
 
 <body>
@@ -55,16 +56,16 @@
       </div>
     </div>
 
-    <div class="Product__localNavWrapper">
+    <div class="Product__localNavWrapper js-localNavWrapper">
       <ul class="Product__localNav">
-        <li class="is-current"><a href="#">郵便物を一括管理</a></li>
-        <li><a href="#">5秒で荷物登録</a></li>
-        <li><a href="#">荷受人に自動通知</a></li>
-        <li><a href="#">業務を可視化</a></li>
+        <li class="is-current js-localNavItem"><a href="#office1" class="js-localNavLink">郵便物を一括管理</a></li>
+        <li class="js-localNavItem"><a href="#office2" class="js-localNavLink">5秒で荷物登録</a></li>
+        <li class="js-localNavItem"><a href="#office3" class="js-localNavLink">荷受人に自動通知</a></li>
+        <li class="js-localNavItem"><a href="#office4" class="js-localNavLink">業務を可視化</a></li>
       </ul>
     </div>
 
-    <div class="Product__feature Product__feature--office1">
+    <div class="Product__feature Product__feature--office1" id="office1">
       <h4 class="Product__featureTitle">
         <span class="image"></span>
         <b class="title">郵便物を一元管理</b>
@@ -90,7 +91,7 @@
       </div>
     </div>
 
-    <div class="Product__feature Product__feature--office2">
+    <div class="Product__feature Product__feature--office2" id="office2">
       <h4 class="Product__featureTitle">
         <span class="image"></span>
         <b class="title">アプリで荷物登録</b>
@@ -122,7 +123,7 @@
       </div>
     </div>
 
-    <div class="Product__feature Product__feature--office3">
+    <div class="Product__feature Product__feature--office3" id="office3">
       <h4 class="Product__featureTitle">
         <span class="image"></span>
         <b class="title">荷受人に自動通知</b>
@@ -146,7 +147,7 @@
       </div>
     </div>
 
-    <div class="Product__feature Product__feature--office4">
+    <div class="Product__feature Product__feature--office4" id="office4">
       <h4 class="Product__featureTitle">
         <span class="image"></span>
         <b class="title">業務を可視化</b>

@@ -66,6 +66,14 @@ a {
 .Icon {
     display: block;
 }
+.is-fixed {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .05);
+}
 /**
  * Variables
  */
@@ -1893,6 +1901,7 @@ i {
 }
 .Faq__localNav a {
     display: block;
+    height: 100%;
     padding-top: 35px;
     text-align: center;
     color: #000000;
@@ -1911,11 +1920,11 @@ i {
 .Faq__wrapper--personal {
     background-color: #fafafa;
 }
-.Faq__wrapperLine {
+.Faq__line {
     height: 20px;
     margin-bottom: 80px;
 }
-.Faq__wrapper--office .Faq__wrapperLine {
+.Faq__wrapper--office .Faq__line {
     background: repeating-linear-gradient(
         -45deg,     
         #fff,      
@@ -1924,12 +1933,12 @@ i {
         #129b93 6px   
       );
 }
-.Faq__wrapper--personal .Faq__wrapperLine {
+.Faq__wrapper--personal .Faq__line {
     background: repeating-linear-gradient(
         -45deg,#fff,#fff 4px,#88c41f 4px,#88c41f 6px
       );
 }
-.Faq__wrapper--other .Faq__wrapperLine {
+.Faq__wrapper--other .Faq__line {
     margin-bottom: 70px;
     background: repeating-linear-gradient(
         -45deg,#fff,#fff 4px,#f3a127 4px,#f3a127 6px
