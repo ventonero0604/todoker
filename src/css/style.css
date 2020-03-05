@@ -6,6 +6,7 @@
 @import 'tool/_iconFont.css';
 @import 'tool/_sprite.css';
 @import 'tool/_button.css';
+@import 'tool/_slider.css';
 @import 'tool/_util.css';
 @import 'ui/component/_header.css';
 @import 'ui/component/_bread-crumb.css';

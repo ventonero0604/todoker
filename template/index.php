@@ -3,6 +3,7 @@
 <head>
 <?php include ('component/meta.html'); ?>
 <link rel="stylesheet" href="../src/dist/css/style.css" type="text/css" media="all">
+<script src="../src/dist/js/app.js"></script>
 </head>
 
 <body>
@@ -65,26 +66,54 @@
     <div class="Top__reasonContentsWrapper">
       <div class="Top__reasonContentsContainer">
         <ul class="Top__reasonContentsMenu">
-          <li><a href="#">郵便物を一元管理</a></li>
-          <li><a href="#">5秒で荷物登録</a></li>
-          <li><a href="#">荷受人に自動通知</a></li>
-          <li class="is-current"><a href="#">業務を可視化</a></li>
+          <li class="is-current"><a href="#" class="js-outerSliderMenu">郵便物を一元管理</a></li>
+          <li><a href="#" class="js-outerSliderMenu">5秒で荷物登録</a></li>
+          <li><a href="#" class="js-outerSliderMenu">荷受人に自動通知</a></li>
+          <li><a href="#" class="js-outerSliderMenu">業務を可視化</a></li>
         </ul>
-        <div class="Top__reasonContents">
-          <dl>
-            <dt class="title">業務を可視化</dt>
-            <dd class="text">オペレーションを改善するためのデータも自動的に蓄積。人材配置や効率化の指標に使える</dd>
-            <dd><a href="#" class="button">機能を確認<i class="icon-arrow"></i></a></dd>
-          </dl>
-          <img src="../src/asset/image/top/contents1.png" alt="" />
+        <div data-slick='{"dots": true, "arrows":false}' class="slider">
+          <div>
+            <div class="Top__reasonContents">
+              <dl>
+                <dt class="title">郵便物を一元管理</dt>
+                <dd class="text">オペレーションを改善するためのデータも自動的に蓄積。人材配置や効率化の指標に使える</dd>
+                <dd><a href="#" class="button">機能を確認<i class="icon-arrow"></i></a></dd>
+              </dl>
+              <img src="../src/asset/image/top/contents1.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="Top__reasonContents">
+              <dl>
+                <dt class="title">5秒で荷物登録</dt>
+                <dd class="text">オペレーションを改善するためのデータも自動的に蓄積。人材配置や効率化の指標に使える</dd>
+                <dd><a href="#" class="button">機能を確認<i class="icon-arrow"></i></a></dd>
+              </dl>
+              <img src="../src/asset/image/top/contents1.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="Top__reasonContents">
+              <dl>
+                <dt class="title">荷受人に自動通知</dt>
+                <dd class="text">オペレーションを改善するためのデータも自動的に蓄積。人材配置や効率化の指標に使える</dd>
+                <dd><a href="#" class="button">機能を確認<i class="icon-arrow"></i></a></dd>
+              </dl>
+              <img src="../src/asset/image/top/contents1.png" alt="" />
+            </div>
+          </div>
+          <div>
+            <div class="Top__reasonContents">
+              <dl>
+                <dt class="title">業務を可視化</dt>
+                <dd class="text">オペレーションを改善するためのデータも自動的に蓄積。人材配置や効率化の指標に使える</dd>
+                <dd><a href="#" class="button">機能を確認<i class="icon-arrow"></i></a></dd>
+              </dl>
+              <img src="../src/asset/image/top/contents1.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-      <ul class="Top__reasonContentsIndicator">
-        <li><a href="#">郵便物を一元管理</a></li>
-        <li><a href="#">5秒で荷物登録</a></li>
-        <li><a href="#">荷受人に自動通知</a></li>
-        <li class="is-current"><a href="#">業務を可視化</a></li>
-      </ul>
     </div>
   </div><!--/.Top__reason-->
 

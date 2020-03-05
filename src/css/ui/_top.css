@@ -229,12 +229,12 @@
 
     li {
       width: 100%;
-      padding-top: 30px;
       border-top: 3px solid $border_light_gray;
 
       a {
         display: block;
         text-align: center;
+        padding-top: 30px;
         color: $border_light_gray;
       }
 
@@ -271,6 +271,7 @@
 
     dl {
       flex: 1;
+      margin-right: 10px;
 
       @mixin notPC {
         order: 2;
@@ -283,7 +284,6 @@
       margin-bottom: 35px;
 
       @mixin PC {
-        width: 260px;
         margin-bottom: 50px;
       }
     }
@@ -294,7 +294,6 @@
       color: $text_gray;
 
       @mixin PC {
-        width: 260px;
         margin-bottom: 50px;
       }
       @mixin Smp {
@@ -324,30 +323,6 @@
       @mixin notPC {
         order: 1;
         margin-bottom: 35px;
-      }
-    }
-  }
-
-  &__reasonContentsIndicator {
-    display: flex;
-    justify-content: center;
-
-    li + li {
-      margin-left: 18px;
-    }
-
-    a {
-      @mixin hideText;
-      display: block;
-      border: 1px solid $indicator_gray;
-      width: 18px;
-      height: 18px;
-    }
-
-    .is-current {
-      a {
-        background-color: $orange;
-        border-color: $orange;
       }
     }
   }
