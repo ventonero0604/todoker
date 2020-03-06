@@ -20,7 +20,7 @@
           <h2>トドケール</h2>
           <h3><span></span></h3>
           <p class="Top__mainText">オフィスの郵便物の受け渡しをもっと便利に！郵便物の受け渡しを見える化・効率化します。</p>
-          <a href="#" class="button">プロダクト<i class="icon-arrow"></i></a>
+          <a href="#" class="button">お問い合わせしてみる！<i class="icon-arrow"></i></a>
         </div>
         <div class="Top__mainMovieWrapper">
           <div class="Top__mainMovie">

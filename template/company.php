@@ -57,7 +57,9 @@
     <div class="Company__wrapper Company__wrapper--access">
       <h3 class="Company__title"><b>アクセス</b></h3>
       <p>東京メトロ九段下駅6番出口から徒歩1分ほどです。</p>          
-      <div class="dummy"></div>
+      <div class="Company__mapWrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.26400158097!2d139.74956321584065!3d35.69512048019125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c6b480a32bf%3A0x1f9147dfcecd7dd5!2z44CSMTAyLTAwNzQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Lmd5q615Y2X77yR5LiB55uu77yV4oiS77yWIOOCiuOBneOBquS5neauteODk-ODqyDvvJXpmo4!5e0!3m2!1sja!2sjp!4v1583494823933!5m2!1sja!2sjp" width="100%" height="518" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
     </div>
 
   </div>

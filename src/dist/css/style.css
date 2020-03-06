@@ -425,7 +425,7 @@ i {
 }
 @media screen and (max-width: 1023px) {
     .Header__menu {
-        visibility: hidden;
+        display: none;
         -ms-flex-direction: column;
             flex-direction: column;
         position: absolute;
@@ -438,8 +438,8 @@ i {
     }
     .Header__menu.is-show {
         visibility: visible;
-        height: auto;
         opacity: 1;
+        display: block;
     }
 }
 .Header__menu li {
@@ -983,7 +983,7 @@ i {
 
 .Top__mainWrapper {
     width: 100%;
-    padding: 60px 0 160px;
+    padding: 110px 0 110px;
     background-image: url("../../asset/image/top/main_bg.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -1467,7 +1467,7 @@ i {
 }
 
 .Top__product .image1 {
-    background-size: 625px 420px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 625px;
@@ -1485,7 +1485,7 @@ i {
 }
 
 .Top__product .image2 {
-    background-size: 547px 106px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 547px;
@@ -1792,7 +1792,7 @@ i {
 .Top__newsWrapper {
     max-width: 1024px;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -1816,7 +1816,7 @@ i {
     line-height: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, .20);
     color: #7f828b;
-    font-size: 137.5%;
+    font-size: 112.5%;
 }
 
 .Top__newsItem--date {
@@ -1851,7 +1851,7 @@ i {
 
 .Top__missionWrapper {
     width: 100%;
-    padding: 76px 0 76px;
+    padding: 100px 0 100px;
     background-image: url("../../asset/image/top/main_bg.png");
     background-size: 150%;
     background-position: 50% 50%;
@@ -2002,7 +2002,7 @@ i {
     }
 }
 .Company__wrapper--access {
-    padding-bottom: 60px;
+    padding: 80px 0 60px;
 }
 @media screen and (max-width: 767px) {
     .Company__wrapper--access p {
@@ -2014,6 +2014,7 @@ i {
     text-align: center;
     font-size: 112.5%;
     line-height: 31px;
+    max-width: 840px;
 }
 .Company__wrapper p + p {
     margin-top: 44px;
@@ -2055,10 +2056,9 @@ i {
         padding-right: 10px;
     }
 }
-.Company .dummy {
+.Company__mapWrapper {
     height: 518px;
     width: 100%;
-    background: lightgray;
     margin-top: 78px;
 }
 .Faq {
@@ -2602,6 +2602,8 @@ i {
     padding: 80px 50px;
     font-size: 125%;
     line-height: 35px;
+    max-width: 1020px;
+    margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
     .Story__leadText {
@@ -2793,7 +2795,6 @@ i {
 .Product__mainWrapper {
     position: relative;
     width: 100%;
-    height: 540px;
     background-image: url("../../asset/image/product/main_bg.png");
     background-position: 50% 50%;
     background-size: cover;
@@ -2838,7 +2839,7 @@ i {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    padding-top: 90px;
+    padding: 90px 0 80px;
     position: relative;
     z-index: 2;
 }
@@ -2848,6 +2849,7 @@ i {
             flex-direction: column;
         display: block;
         padding-top: 0;
+        padding-bottom: 0;
     }
 }
 @media screen and (max-width: 767px) {
@@ -2885,7 +2887,6 @@ i {
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
-    margin-top: -60px;
 }
 @media screen and (max-width: 1023px) {
     .Product__main .textWrapper {
@@ -2899,7 +2900,7 @@ i {
     text-align: center;
     width: 100%;
     padding-bottom: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #129b93;
 }
 @media screen and (max-width: 1023px) {
@@ -2914,7 +2915,7 @@ i {
 .Product__main .logo {
     width: 319px;
     height: 108px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     background-image: url("../../asset/image/logo_office.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -2934,12 +2935,29 @@ i {
     font-size: 150%;
     line-height: 50px;
     text-align: center;
+    margin-bottom: 30px;
 }
 @media screen and (max-width: 1023px) {
     .Product__main .lead {
         line-height: 1.5;
         padding: 0 10px;
     }
+}
+.Product__main .button {
+    display: block;
+    height: 55px;
+    color: black;
+    text-align: center;
+    line-height: 55px;
+    background-color: white;
+    border-radius: 55px;
+    width: 300px;
+    background-color: #129b93;
+    color: white;
+    margin-bottom: 30px;
+}
+.Product--personal .Product__main .button {
+    background-color: #88c41f;
 }
 .Product__infoWrapper {
     width: 100%;

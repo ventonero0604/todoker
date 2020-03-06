@@ -1,7 +1,7 @@
 .Top {
   &__mainWrapper {
     width: 100%;
-    padding: 60px 0 160px;
+    padding: 110px 0 110px;
     background-image: url("../../asset/image/top/main_bg.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -360,7 +360,7 @@
     }
 
     .image1 {
-      background-size: 625px 420px;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: 0 0;
       width: 625px;
@@ -376,7 +376,7 @@
     }
 
     .image2 {
-      background-size: 547px 106px;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: 0 0;
       width: 547px;
@@ -614,7 +614,7 @@
   &__newsWrapper {
     max-width: 1024px;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 
     @mixin notPC {
       max-width: 862px;
@@ -633,7 +633,7 @@
     line-height: 80px;
     border-bottom: 1px solid $border_light_gray20;
     color: $text_gray;
-    @mixin font-size 22;
+    @mixin font-size 18;
 
     &--date {
       padding-left: 214px;
@@ -665,7 +665,7 @@
 
   &__missionWrapper {
     width: 100%;
-    padding: 76px 0 76px;
+    padding: 100px 0 100px;
     background-image: url("../../asset/image/top/main_bg.png");
     background-size: 150%;
     background-position: 50% 50%;

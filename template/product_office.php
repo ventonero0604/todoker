@@ -20,6 +20,7 @@
           <p class="title">配達物管理システム</p>
           <h2 class="logo">オフィスでトドケール</h2>
           <h3 class="lead">オフィス郵便物の受け渡しをもっと便利に！<br/>郵便物の受け渡しを見える化・効率化。</h3>
+          <a href="#" class="button">お問い合わせしてみる！<i class="icon-arrow"></i></a>
         </div>
       </div>
       <div class="line"></div>

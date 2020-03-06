@@ -2,7 +2,6 @@
   &__mainWrapper {
     position: relative;
     width: 100%;
-    height: 540px;
     background-image: url("../../asset/image/product/main_bg.png");
     background-position: 50% 50%;
     background-size: cover;
@@ -46,7 +45,7 @@
   &__main {
     display: flex;
     justify-content: center;
-    padding-top: 90px;
+    padding: 90px 0 80px;
     position: relative;
     z-index: 2;
 
@@ -54,6 +53,7 @@
       flex-direction: column;
       display: block;
       padding-top: 0;
+      padding-bottom: 0;
     }
     @mixin Smp {
       flex-direction: column;
@@ -83,7 +83,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: -60px;
 
       @mixin notPC{
         max-width: 500px;
@@ -96,7 +95,7 @@
       text-align: center;
       width: 100%;
       padding-bottom: 18px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       border-bottom: 1px solid $green;
 
       @mixin notPC {
@@ -111,7 +110,7 @@
     .logo {
       width: 319px;
       height: 108px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       background-image: url("../../asset/image/logo_office.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -129,10 +128,22 @@
       @mixin font-size 24;
       line-height: 50px;
       text-align: center;
+      margin-bottom: 30px;
 
       @mixin notPC {
         line-height: 1.5;
         padding: 0 10px;
+      }
+    }
+    .button {
+      @mixin button-rounded;
+      width: 300px;
+      background-color: $green;
+      color: white;
+      margin-bottom: 30px;
+
+      .Product--personal & {
+        background-color: $light_green;
       }
     }
   }
@@ -172,7 +183,6 @@
     P + P {
       margin-top: 30px;
     }
-
   }
 
   &__storyList {

@@ -49,7 +49,6 @@
       padding: 80px 10px;
     }
     
-
     &--info {
       padding: 80px 100px;
 
@@ -59,12 +58,11 @@
     }
 
     &--access {
-      padding-bottom: 60px;
+      padding: 80px 0 60px;
 
       @mixin Smp {
         p {
           padding: 0 10px;
-
         }
       }
     }
@@ -74,6 +72,7 @@
       text-align: center;
       @mixin font-size 18;
       line-height: 31px;
+      max-width: 840px;
     }
 
     p + p {
@@ -126,10 +125,9 @@
     }
   }
 
-  .dummy {
+  &__mapWrapper {
     height: 518px;
     width: 100%;
-    background: lightgray;
     margin-top: 78px;
   }
 }

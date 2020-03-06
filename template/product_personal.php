@@ -19,6 +19,7 @@
           <p class="title">荷物受け渡しアプリ</p>
           <h2 class="logo">じぶんでトドケール</h2>
           <h3 class="lead">私が受け取るモノはどこに？<br/>個人間でのモノの受け渡しをもっと便利に。</h3>
+          <a href="#" class="button">お問い合わせしてみる！<i class="icon-arrow"></i></a>
         </div>
       </div>
       <div class="line"></div>

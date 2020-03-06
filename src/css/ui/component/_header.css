@@ -62,7 +62,7 @@
     display: flex;
 
     @mixin notPC {
-      visibility: hidden;
+      display: none;
       flex-direction: column;
       position: absolute;
       background-color: white;
@@ -74,8 +74,8 @@
 
       &.is-show {
         visibility: visible;
-        height: auto;
         opacity: 1;
+        display: block;
       }
     }
 
