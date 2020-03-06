@@ -419,13 +419,46 @@ i {
         display: block;
     }
 }
+.Header__menu {
+    display: -ms-flexbox;
+    display: flex;
+}
+@media screen and (max-width: 1023px) {
+    .Header__menu {
+        visibility: hidden;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        position: absolute;
+        background-color: white;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        opacity: 1;
+        border-top: 2px solid #dcdcdc;
+    }
+    .Header__menu.is-show {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+    }
+}
 .Header__menu li {
-    float: left;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
     font-size: 14px;
     margin-left: 26px;
 }
 .Header__menu li a {
     color: black;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+.Header__menu li a:hover {
+    text-decoration: underline;
 }
 .Header__menu li i {
     display: inline-block;
@@ -433,15 +466,106 @@ i {
     margin-bottom: 2px;
 }
 .Header__menu li ul {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 200px;
+    top: 46px;
+    left: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    -ms-flex-direction: column;
+        flex-direction: column;
+    transition: all .2s ease;
+}
+.Header__menu li ul:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 0 0 16px;
+    border-color: transparent transparent transparent white;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.2)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .2));
+    content: "";
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    z-index: 1;
 }
 .Header__menu li ul li {
-    margin-right: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    background-color: white;
+    z-index: 10;
+}
+.Header__menu li ul li a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 26px;
+    background-color: white;
 }
 @media screen and (max-width: 1023px) {
     .Header__menu {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .Header__menu .is-show {
+        visibility: visible;
+        opacity: 1;
+    }
+    .Header__menu li {
+        display: block;
+        border-bottom: 1px solid #dcdcdc;
+        margin-left: 0;
+    }
+    .Header__menu li i {
         display: none;
     }
+    .Header__menu li a {
+        width: 100%;
+        font-size: 175%;
+        height: 84px;
+        line-height: 84px;
+        padding-left: 26px;
+    }
+    .Header__menu li ul {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        width: 100%;
+        top: auto;
+        left: auto;
+        box-shadow: none;
+        border-top: 1px solid #dcdcdc;
+    }
+    .Header__menu li ul:after {
+        display: none;
+    }
+    .Header__menu li ul li {
+        display: block;
+        border-color: #000000;
+        border-color: rgba(0, 0, 0, .20);
+    }
+    .Header__menu li ul li:last-child {
+        border: none;
+    }
+    .Header__menu li ul li a {
+        padding-left: 56px;
+        background-color: #000000;
+        background-color: rgba(0, 0, 0, .05);
+        width: 100%;
+        height: 84px;
+        line-height: 84px;
+    }
+}
+.Header__menu li:hover ul {
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
 }
 .BreadCrumb {
     border-top: 1px solid rgba(0, 0, 0, .10);
@@ -801,6 +925,9 @@ i {
 }
 .Footer__menuList dd a {
     color: black;
+}
+.Footer__menuList dd a:hover {
+    text-decoration: underline;
 }
 @media screen and (max-width: 767px) {
     .Footer__menu {

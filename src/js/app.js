@@ -11,6 +11,11 @@ $(function () {
       sliderMenu = $('.js-outerSliderMenu'),
       offset = nav.offset();
 
+  // ハンバーガーメニュー
+  $('.js-smpMenu').click(function() {
+    $('.Header__menu').toggleClass('is-show');
+  })
+
   if (nav) {
     // フローティングメニュー(localNavi)
     $(window).scroll(function () {
@@ -42,7 +47,7 @@ $(function () {
     });
   }
 
-
+  // スライダー
   if (slider) {
     slider.slick();
 
@@ -67,5 +72,4 @@ $(function () {
       menuList.eq(indicatorNumber).addClass(currentClassName);
     }) 
   }
-
 });
