@@ -1039,12 +1039,18 @@ i {
 }
 
 .Top__mainMovie {
-    background-color: lightgray;
-    background-image: url(../../asset/image/top/main_movie.png);
-    background-size: cover;
+    position: relative;
+    height: 0;
+    overflow: hidden;
     padding-top: 66.66667%;
+}
+
+.Top__mainMovie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 @media screen and (max-width: 1023px) {

@@ -23,7 +23,9 @@
           <a href="#" class="button">プロダクト<i class="icon-arrow"></i></a>
         </div>
         <div class="Top__mainMovieWrapper">
-          <div class="Top__mainMovie"></div>
+          <div class="Top__mainMovie">
+            <iframe width="685" height="456" src="https://www.youtube.com/embed/5ZxeaGKs8YA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>

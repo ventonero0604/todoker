@@ -43,12 +43,18 @@
   }
 
   &__mainMovie {
-    background-color: lightgray;
-    background-image: url(../../asset/image/top/main_movie.png);
-    background-size: cover;
+    position: relative;
+    height: 0;
+    overflow: hidden;
     padding-top: calc(420 / 630 * 100%);
-    width: 100%;
-    height: auto;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
     @mixin notPC {
       order: 1;
