@@ -1,0 +1,217 @@
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0 5px 3px rgba(0,0,0,0.05);
+  z-index: 10;
+
+  &__logoWrapper {
+    position: relative;
+    flex: 1;
+    margin-left: 46px;
+
+    @mixin Smp {
+      margin-left: 20px;
+    }
+  }
+
+  &__logo {
+    background-image: url("../image/logo.png");
+    background-position: 0 0;
+    background-size: 147px 38px;
+    width: 147px;
+    height: 38px;
+  }
+
+  &__logoText {
+    background-image: url("../image/logo_text.png");
+    background-position: 0 0;
+    background-size: 210px 13px;
+    width: 210px;
+    height: 13px; 
+    position: absolute;
+    top: 12px;
+    left: 169px;
+
+    @mixin Smp {
+      display: none;
+    }
+  }
+
+  &__menuWrapper {
+
+    @mixin PC {
+      margin-right: 46px;
+    }
+
+    .Icon--menu {
+      position: absolute;
+      right: 28px;
+      top: 50%;
+      margin-top: -14px;
+      display: none;
+
+      @mixin notPC {
+        display: block;
+      }
+    }
+  }
+  
+  &__menu {
+    display: flex;
+
+    @mixin notPC {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: white;
+      top: 100px;
+      right: 0;
+      width: 100%;
+      opacity: 1;
+      border-top: 2px solid $border_menu;
+
+      &.is-show {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      margin-left: 26px;
+
+      a {
+        color: black;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      i {
+        display: inline-block;
+        margin-left: 6px;
+        margin-bottom: 2px;
+      }
+
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 200px;
+        top: 46px;
+        left: 8px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        flex-direction: column;
+        transition: all .2s ease;
+
+        &:after {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 16px 0 0 16px;
+          border-color: transparent transparent transparent white;
+          filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+          content: "";
+          display: block;
+          position: absolute;
+          top: -14px;
+          left: 0;
+          z-index: 1;
+        }
+
+        li {
+          margin-left: 0;
+          border-bottom: 1px solid $border_menu;
+          position: relative;
+          background-color: white;
+          z-index: 10;
+
+          a {
+            display: block;
+            height: 42px;
+            line-height: 42px;
+            padding: 0 26px;
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    @mixin notPC {
+      visibility: hidden;
+      opacity: 0;
+
+      .is-show {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      li {
+        display: block;
+        border-bottom: 1px solid $border_menu;
+        margin-left: 0;
+
+        i {
+          display: none;
+        }
+
+        a {
+          width: 100%;
+          @mixin font-size 28;
+          height: 84px;
+          line-height: 84px;
+          padding-left: 26px;
+        }
+  
+        ul {
+          visibility: visible;
+          opacity: 1;
+          position: relative;
+          width: 100%;
+          top: auto;
+          left: auto;
+          box-shadow: none;
+          border-top: 1px solid $border_menu;
+  
+          &:after {
+            display: none;
+          }
+  
+          li {
+            display: block;
+            border-color: $border_light_gray20;
+  
+            &:last-child {
+              border: none;
+            }
+  
+            a {
+              padding-left: 56px;
+              background-color: $border_light_gray5;
+              width: 100%;
+              height: 84px;
+              line-height: 84px;
+            }
+          }
+        }
+      }
+    }
+
+    li:hover ul {
+      display: flex;
+      background-color: white;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.ProductList {
+  &__mainWrapper {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background-image: url("../../asset/image/product/main_bg.png");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    .logo {
+      width: 290px;
+      height: 73px;
+      margin-bottom: 65px;
+      background-image: url("../../asset/image/logo.png");
+      background-size: cover;
+      @mixin hideText;
+    }
+  }
+
+  &__lead {
+    @mixin font-size 30;
+    margin-top: 80px;
+    text-align: center;
+  }
+}

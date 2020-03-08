@@ -1,0 +1,148 @@
+.Stories {
+
+  &__mainWrapper {
+    width: 100%;
+    background-image: url("../../asset/image/stories/main_bg.png");
+    background-size: 1926px 1986px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 560px;
+
+    h2 {
+      background-image: url("../../asset/image/logo.png");
+      background-position: 0 0;
+      background-size: 290px 74px;
+      width: 290px;
+      height: 74px;
+      margin-top: 29px;
+      margin-bottom: 36px;
+      @mixin hideText;
+    }
+
+    h3 {
+      text-align: center;
+      @mixin font-size 29;
+    }
+  }
+
+  &__wrapper {
+    padding: 85px 10px 140px;
+    background-color: $border_light_gray5;
+  }
+
+  &__titleText {
+    margin-bottom: 85px;
+    text-align: center;
+    @mixin font-size 30;
+  }
+
+  &__itemList {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    flex-basis: 50%;
+    background-color: white;
+
+    @mixin Smp {
+      flex-basis: auto;
+      flex-direction: column;
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+
+    .image {
+      background-image: url(../../asset/image/stories/story_img.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 50%;
+
+      @mixin Smp {
+        width: auto;
+        padding-top: calc(480 / 680 * 100%);
+      }
+    }
+    .textWrapper {
+      width: 50%;
+
+      @mixin Smp {
+        width: auto;
+      }
+    }
+    .textContainer {
+      max-width: calc(414px - 64px);
+      padding: 50px 64px;
+
+      @mixin Smp {
+        max-width: 100%;
+        padding: 25px 32px;
+      }
+    }
+    .Icon {
+      margin-bottom: 24px;
+    }
+    .title {
+      margin-bottom: 24px;
+      line-height: 38px;
+      @mixin font-size 24;
+    }
+    .text {
+      margin-bottom: 36px;
+      line-height: 24px;
+    }
+    .textlink {
+      color: black;
+    }
+  }
+
+  &__pagerWrapper {
+    width: 473px;
+    margin: 0 auto;
+  }
+
+  &__pager {
+    display: flex;
+    margin-top: 116px;
+
+    li + li {
+      margin-left: 10px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 60px;
+      color: $orange;
+      border: 1px solid $orange;
+      @mixin font-size 30;
+
+      @mixin Smp {
+        height: 40px;
+        width: 60px;
+      }
+
+    }
+
+    .next a {
+      @mixin font-size 24;
+    }
+
+    .is-current a {
+      border-color: $border_light_gray;
+      color: $border_light_gray;
+    }
+  }
+}

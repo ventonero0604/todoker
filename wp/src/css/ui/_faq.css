@@ -1,0 +1,264 @@
+.Faq {
+  color: $text_dark_gray;
+
+  &__mainWrapper {
+    width: 100%;
+    background-image: url("../../asset/image/faq/main_bg.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 560px;
+
+    @mixin notPC {
+      height: 400px;
+    }
+
+    h2 {
+      background-image: url("../../asset/image/logo.png");
+      background-size: cover;
+      background-position: 0 0;
+      width: 425px;
+      height: 108px;
+      margin-top: 29px;
+      margin-bottom: 36px;
+      @mixin hideText;
+
+      @mixin Smp {
+        width: 320px;
+        height: 76px;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      @mixin font-size 29;
+    }
+  }
+
+  &__localNavWrapper {
+    background-color: $bg_light_gray;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__localNav {
+    display: flex;
+    margin-right: -10px;
+    margin-bottom: 35px;
+
+    @mixin Smp {
+      display: none;
+    }
+
+    li {
+      width: 275px;
+      margin-right: 10px;
+      border-top: 3px solid $border_light_gray;
+
+      @mixin notPC {
+        width: 200px;
+      }
+    }
+
+    a {
+      display: block;
+      height: 100%;
+      padding-top: 35px;
+      text-align: center;
+      color: $border_light_gray;
+      @mixin font-size 18;
+    }
+
+    .is-current {
+      border-color: $orange;
+
+      a {
+        color: $orange;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 100px;
+
+    &--personal {
+      background-color: $bg_light_gray;
+    }
+  }
+
+  &__line {
+    height: 20px;
+    margin-bottom: 80px;
+
+    .Faq__wrapper--office & {
+      background: repeating-linear-gradient(
+        -45deg,     /* 角度の指定 */
+        #fff,      /* 色A ... 開始 */
+        #fff 4px,  /* 色A ... 終了 */
+        $green 4px,      /* 色B ... 開始 */
+        $green 6px   /* 色B ... 終了 */
+      );
+    }
+    .Faq__wrapper--personal & {
+      background: repeating-linear-gradient(
+        -45deg,#fff,#fff 4px,$light_green 4px,$light_green 6px
+      );
+    }
+    .Faq__wrapper--other & {
+      margin-bottom: 70px;
+      background: repeating-linear-gradient(
+        -45deg,#fff,#fff 4px,$orange 4px,$orange 6px
+      );
+    }
+  }
+
+  &__titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    margin-bottom: 100px;
+
+    @mixin Smp {
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    .Faq__wrapper--other & {
+      margin-bottom: 70px;
+    }
+
+    .logo {
+      width: 290px;
+      @mixin hideText;
+
+      @mixin Smp {
+        margin-bottom: 20px;
+      }
+
+      b {
+        display: block;
+        background-image: url(../../asset/image/logo_office.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: calc(99 / 292 * 100%);
+        width: 100%;
+        height: auto;
+      }
+
+      .Faq__wrapper--personal & {
+        b {
+          background-image: url(../../asset/image/logo_personal.png);
+        }
+      }
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-left: 42px;
+      padding-left: 42px;
+      border-left: 1px solid $text_dark_gray;
+
+      @mixin Smp {
+        margin: 0 10px;
+        padding-left: 0;
+        border-left: none;
+        text-align: center;
+      }
+
+      .Faq__wrapper--other & {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      b {
+        @mixin font-size 38;
+      }
+    }
+  }
+
+  &__itemWrapper {
+    max-width: 1050px;
+    border: 1px solid $green;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background-color: white;
+
+    @mixin notPC {
+      max-width: 550px;
+      padding: 0 20px;
+    }
+    @mixin Smp {
+      margin: 0 10px;
+    }
+
+    & + & {
+      margin-top: 14px;
+    }
+
+    .Faq__wrapper--personal & {
+      border-color: $light_green;
+    }
+    .Faq__wrapper--other & {
+      border-color: $orange;
+    }
+  }
+
+  &__item {
+    display: flex;
+
+    @mixin notPC {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @mixin Smp {
+      .Icon {
+        transform: scale(.7);
+      }
+    }
+  }
+
+  &__textWrapper {
+    margin-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 1;
+
+    @mixin Smp {
+      margin-left: 0;
+      margin-top: -20px;
+      padding-top: 0;
+    }
+
+    .title {
+      margin-bottom: 35px;
+      @mixin font-size 30;
+      color: $green;
+
+      .Faq__wrapper--personal & {
+        color: $light_green;
+      }
+      .Faq__wrapper--other & {
+        color: $orange;
+      }
+    }
+
+    .text {
+      @mixin font-size 18;
+      line-height: 31px;
+    }
+  }
+}

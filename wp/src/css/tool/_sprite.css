@@ -1,0 +1,95 @@
+.Icon {
+    display: block;
+    text-indent: -9999px;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../image/all.png);
+    background-size: 520px 328px;
+    background-repeat: no-repeat;
+}
+
+.Icon--arrow {
+    width: 9px;
+    height: 6.5px;
+    background-position: -504px -31px;
+}
+.Icon--buttonIos {
+    width: 130px;
+    height: 41px;
+    background-position: -330px -31px;
+}
+.Icon--faqOffice {
+    width: 163px;
+    height: 163px;
+    background-position: 0px 0px;
+}
+.Icon--faqOther {
+    width: 163px;
+    height: 163px;
+    background-position: -165px 0px;
+}
+.Icon--faqPersonal {
+    width: 163px;
+    height: 163px;
+    background-position: 0px -165px;
+}
+.Icon--menu {
+    width: 40px;
+    height: 28px;
+    background-position: -476px -74px;
+}
+.Icon--reason1 {
+    width: 71px;
+    height: 52px;
+    background-position: -330px -163px;
+}
+.Icon--reason2 {
+    width: 135px;
+    height: 51px;
+    background-position: -165px -235px;
+}
+.Icon--reason3 {
+    width: 107.5px;
+    height: 68px;
+    background-position: -165px -165px;
+}
+.Icon--reason4 {
+    width: 71px;
+    height: 52px;
+    background-position: -403px -163px;
+}
+.Icon--snsFb {
+    width: 40px;
+    height: 40px;
+    background-position: -462px -31px;
+}
+.Icon--snsTw {
+    width: 40px;
+    height: 40px;
+    background-position: -476px -163px;
+}
+.Icon--story {
+    width: 153px;
+    height: 26px;
+    background-position: -330px -105px;
+}
+.Icon--titleCaseStudy {
+    width: 190px;
+    height: 29px;
+    background-position: -330px 0px;
+}
+.Icon--titleMission {
+    width: 140px;
+    height: 28px;
+    background-position: -330px -133px;
+}
+.Icon--titleNews {
+    width: 87px;
+    height: 29px;
+    background-position: -330px -217px;
+}
+.Icon--titleProduct {
+    width: 144px;
+    height: 29px;
+    background-position: -330px -74px;
+}

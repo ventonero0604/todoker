@@ -1,0 +1,33 @@
+/**
+ * @mixin breakpoints
+ */
+
+@define-mixin LargePC $breakpoint {
+    @media screen and (min-width: 1920px) {
+      @mixin-content;
+    }
+}
+
+@define-mixin PC $breakpoint {
+    @media screen and (min-width: 1024px) {
+      @mixin-content;
+    }
+}
+
+@define-mixin notPC $breakpoint {
+    @media screen and (max-width: 1023px) {
+      @mixin-content;
+    }
+}
+
+@define-mixin Tab $breakpoint {
+    @media screen and (max-width: 1023px) and (min-width: 768px) {
+      @mixin-content;
+    }
+}
+
+@define-mixin Smp $breakpoint {
+    @media screen and (max-width: 767px) {
+      @mixin-content;
+    }
+}
